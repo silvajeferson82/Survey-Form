@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario</title>
+</head>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">
+                Academia Body Fit <hr> Formulario de Pesquisa
+            </h1>
+            <p id="description" class="description text-center">
+                Obrigado por ajudar a melhorar nossa academia.
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Nome</label>
+                <input type="text" 
+                id="name"
+                class="form-control"
+                name="nome"
+                placeholder="Informe seu nome"
+                required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" 
+                id="email"
+                class="form-control"
+                name="email"
+                placeholder="Informe seu E-mail"
+                required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">
+                    Idade <span class="clue">(opcional)</span>
+                </label>    
+                <input type="number" 
+                id="number"
+                name="age"
+                min="10"
+                max="99"
+                class="form-control"
+                placeholder="Idade">
+                
+            </div>
+            <div class="form-group">
+                <p>Qual opção descreve melhor sua satisfação?</p>
+                <select name="role" 
+                id="dropdown"
+                class="form-control"
+                required>
+                    <option disabled selected value>
+                        Selecione uma opção.
+                    </option>
+                    <option value="muito">
+                        Muito satisfeito.
+                    <option value="satisfeito">
+                        Apenas satisfeito.
+                    </option>
+                    <option value="pouco">
+                        Pouco satisfeito.
+                    </option>
+                    <option value="insatisfeito">
+                        Não estou satisfeito.
+                    </option>
+                    <option value="outro">
+                        outros.
+                    </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Você recomenda nossa academia para seus amigos?</p>
+                <label for="">
+                    <input type="radio" 
+                    class="input-radio"
+                    name="user-recommend"
+                    value="sempre"
+                    checked>
+                    Sempre. 
+                </label>
+                <label for="">
+                    <input type="radio" 
+                    class="input-radio"
+                    name="user-recommend"
+                    value="quase">
+                    Quase sempre. 
+                </label>
+                <label for="">
+                    <input type="radio" 
+                    class="input-radio"
+                    name="user-recommend"
+                    value="nunca">
+                    Nunca. 
+                </label>
+            </div>
+            <div class="form-group">
+              <p>Qual sua área favorita da Academia?</p>  
+              <select name="mostLike" 
+              id="most-like"
+              class="form-control"
+              required>
+                <option disabled selected value>
+                  Selecione uma opção.
+                </option>
+                <option value="musculacao">
+                    Musculação.
+                </option>
+                <option value="Salao">
+                    Salão de Ginastica.
+                </option>
+                <option value="quadra">
+                    Quadra.
+                </option>
+                <option value="piscina">
+                    Piscina.
+                </option>
+              </select>
+            </div>  
+            <div class="form-group">
+                <p>Quais as modalidades você mais gosta?</p>
+                <span class="clue">(Marque quantas quiser.)</span>
+                <label for="">
+                <input
+                name="prefer"
+                value="musculacao"
+                type="checkbox"
+                class="input-checkbox"/>
+                    Musculação.
+                </label>
+                <label for="">
+                <input
+                name="prefer"
+                value="funcional"
+                type="checkbox"
+                class="input-checkbox"/>
+                    Funcional.
+                </label>
+                <label for="">
+                <input
+                name="prefer"
+                value="dancas"
+                type="checkbox"
+                class="input-checkbox"/>
+                Danças.
+                </label>
+                <label for="">
+                <input
+                name="prefer"
+                value="alongamento"
+                type="checkbox"
+                class="input-checkbox"/>
+                    Pilates & Alongamento.
+                </label>
+                <label for="">
+                <input
+                name="prefer"
+                value="lutas"
+                type="checkbox"
+                class="input-checkbox"/>
+                    Boxe & Muay-Thai
+                </label>
+                <label for="">
+                <input
+                name="prefer"
+                value="natacao"
+                type="checkbox"
+                class="input-checkbox"/>
+                    Natação.
+                </label>
+                <label for="">
+                <input
+                name="prefer"
+                value="bike"
+                type="checkbox"
+                class="input-checkbox"/>
+                    Espaço de Bike.
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Deixe seu cometario ou sugestão.</p>
+                <textarea name="comment" 
+                id="comments"
+                class="input-textarea"
+                placeholder="Deixe seu comentario aqui..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" 
+                id="submit" 
+                class="submit-button">
+                Enviar
+                </button>
+            </div>          
+        </form>
+        <footer>
+            Made by <a href="https://codepen.io/silvajeferson82" target="_blank">silvajeferson82</a>
+          </footer>
+    </div>
+    
+</body>
+</html>
